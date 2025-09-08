@@ -44,7 +44,7 @@ const Post = () => {
 }
 const PostId = () => {
   let params = useParams();
-  return <p>Post: {params.postId}</p>;
+  return <p>Post Id: {params.postId}</p>;
 }
 
 function App() {
@@ -64,8 +64,11 @@ function App() {
           <NavLink to="/todo">
             <p>Todo 頁面</p>
           </NavLink>
-          <NavLink to="/post">
+          <NavLink to="/post" end>
             <p>Post 頁面</p>
+          </NavLink>
+          <NavLink to="/post/1">
+            <p>Post 細節頁面</p>
           </NavLink>
         </div>
         {/* Routes, Route 練習區 */}
